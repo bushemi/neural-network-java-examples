@@ -1,4 +1,4 @@
-package com.bushemi.example;
+package com.bushemi.backPropagation.example;
 
 
 public class NeuronLayer {

@@ -1,4 +1,4 @@
-package com.bushemi.example;
+package com.bushemi.backPropagation.example;
 
 import java.util.ArrayList;
 import java.util.List;

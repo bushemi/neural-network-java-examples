@@ -1,6 +1,6 @@
-package com.bushemi;
+package com.bushemi.backPropagation;
 
-import com.bushemi.example.NeuralNetwork;
+import com.bushemi.backPropagation.example.NeuralNetwork;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,8 +8,8 @@ import java.util.Random;
 
 
 public class NnPy {
-    public static final int EPOCHS = 1000;
-    public static final int NUM_HIDDEN = 2;
+    public static final int EPOCHS = 100;
+    public static final int NUM_HIDDEN = 8;
     private static final Random R = new Random();
 
     public static void main(String[] args) {
