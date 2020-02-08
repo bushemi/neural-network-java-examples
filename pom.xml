@@ -8,5 +8,24 @@
     <artifactId>neural-network-examples</artifactId>
     <version>1.0</version>
 
+    <properties>
 
+        <!-- Main properties -->
+        <jdk.version>1.8</jdk.version>
+        <maven-compiler-plagin.version>3.7.0</maven-compiler-plagin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plagin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

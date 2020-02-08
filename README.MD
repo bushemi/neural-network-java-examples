@@ -1,1 +1,1 @@
-com.bushemi.example - neuron net rewritten from nn.py
+com.bushemi.backPropagation.example - neuron net rewritten from nn.py
