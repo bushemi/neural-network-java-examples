@@ -47,13 +47,13 @@ public class NeuralNetwork {
 
     public double calculate_total_error(Map<String, Double[]> training_sets) {
         double totalError = 0;
-//        for (int i = 0; i < training_sets.get("training_inputs").length; i++) {
-        Double[] trainingInputs = training_sets.get("training_inputs");
-        Double[] trainingOutputs = training_sets.get("training_outputs");
-        feed_forward(trainingInputs);
-        for (int j = 0; j < trainingOutputs.length; j++) {
-            totalError += output_layer.neurons[j].calculate_error(trainingOutputs[j]);
-//            }
+        for (int i = 0; i < training_sets.get("training_inputs").length; i++) {
+            Double[] trainingInputs = training_sets.get("training_inputs");
+            Double[] trainingOutputs = training_sets.get("training_outputs");
+            feed_forward(trainingInputs);
+            for (int j = 0; j < trainingOutputs.length; j++) {
+                totalError += output_layer.neurons[j].calculate_error(trainingOutputs[j]);
+            }
         }
         return totalError;
     }
